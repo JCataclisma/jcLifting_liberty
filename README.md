@@ -6,7 +6,11 @@ Arma 3 - Extra features for the USS liberty destroyer
 
 -add the object/prop USS liberty into your mission, either in mission editor, Zeus or script;
 
--= I WILL UPDATE THIS LINE FOR THE "INSTALL" IN A MOMENT, AS IT WORKS DIFFERENTLY FROM THE TAKMYR =-
+-add a marker on the map and name it exactly "mrk_liberty_dock"; 
+
+-this "mrk_liberty_dock" marker should be exactly at the very same coordinates of your USS Liberty object;
+
+-this "mrk_liberty_dock" rotation should be exactly 180 degrees compared to the Liberty object - for instance, if the "ship" is on 55 Z-Rotation, the marker's must be 235;
 
 -while in gameplay, open debug menu [ESC], paste the line below and hit [EXEC]:
 
