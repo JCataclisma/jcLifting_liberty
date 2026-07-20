@@ -28,27 +28,27 @@ If you want to use any other name, just open this SQF file and perform an automa
 
 ==================== -DIFFERENT MODULES:
 
-Every single module is summoned and spawned at the moment the main "liberty_lite" file is called. If you don't wan any of them, just search for the block below, inside the "lite" file, and block the lines related to what you don't want, just like the "module_bathroom" you can see there. Note that even if a module is blocked from spawning, it WILL still be available for selection in the "teleporters" laptops. Although the script is meant to return a denied message in such cases, it might happen that the player is thrown underwater, in position [0,0,0] of the map, case they insist in selecting an unexistent module.
+Every single module is summoned and spawned at the moment the main "liberty_lite" file is called. If you don't wan any of them, just search for the block below, inside the "lite" file, and block the lines related to what you don't want, just like the "module_lowerDeckControl" you can see there. Note that even if a module is blocked from spawning, it WILL still be available for selection in the "teleporters" laptops. Although the script is meant to return a denied message in such cases, it might happen that the player is thrown underwater, in position [0,0,0] of the map, case they insist in selecting an unexistent module.
 
 // ========================================================================= // MODULAR CHAMBER INITIALIZATION PANELS // =========================================================================
 
 // Arguments: [Parent Object, Relative Offset [X, Y, Z]]
 
-//[liberty, [0, 6.6, 1.6]] execVM "module_bathroom.sqf";
+[liberty, [51, 42, 83]] execVM "functions\liberty_modules\module_bathroom.sqf";
 
-[liberty, [4.5, 40.25, 4.5]] execVM "module_serviceRoom.sqf";
+[liberty, [83, 42, 83]] execVM "functions\liberty_modules\module_serviceRoom.sqf";
 
-[liberty, [-6.5, 46.16, 2.5]] execVM "module_engineRoom.sqf";
+[liberty, [-51, 42, 83]] execVM "functions\liberty_modules\module_engineRoom.sqf";
 
-[liberty, [0, 58.5, 20.9]] execVM "module_controlBridge.sqf";
+[liberty, [0, 38, 19.75]] execVM "functions\liberty_modules\module_controlBridge.sqf";
 
-[liberty, [-9, -35.5, 17.5]] execVM "module_hangarBridge.sqf";
+[liberty, [-9, -50.5, 15.5]] execVM "functions\liberty_modules\module_hangarBridge.sqf";
 
-[liberty, [-9, -35.5, 5.75]] execVM "module_lowerDeckControl.sqf";
+//	[liberty, [-9, -35.5, 5.75]] execVM "functions\liberty_modules\module_lowerDeckControl.sqf";
 
-[liberty, [0, 78, 10.83]] execVM "module_frontLandingDeck.sqf";
+[liberty, [0, 78, 10.83]] execVM "functions\liberty_modules\module_frontLandingDeck.sqf";
 
-[liberty, [-4.75, -21.31, 10.75]] execVM "module_hangarService.sqf";
+[liberty, [-5.75, -7.75, 8.25]] execVM "functions\liberty_modules\module_hangarService.sqf";
 
 If you want the green light on the rear deck/hangar show the actions to teleport players, just search ofr the command line below and unlock it, by removing the doubles slashes ' // ' in front of it:
 //	[_deployLight] call JC_fnc_setupTeleportTerminal;
