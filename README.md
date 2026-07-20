@@ -1,12 +1,10 @@
-Arma 3 - Extra features for the USS liberty from Expeditionary Forces DLC
+Arma 3 - Extra features for the USS liberty destroyer
 
 ============================= -DOWNLOAD and INSTALLATION
 
 -copy all these files into your root mission folder (the same place where you find mission.sqm);
 
--inside the file 'functions\liberty_crane\description.ext' you will find the content that is required to correctly activate this script pack: move the .ext file into your mission root folder or MERGE the content in case you already got that file;
-
--add the object/prop USS liberty, from Expeditionary Forces DLC into your mission, either in mission editor, Zeus or script;
+-add the object/prop USS liberty into your mission, either in mission editor, Zeus or script;
 
 -give it the variable name "liberty";
 
@@ -20,9 +18,7 @@ Arma 3 - Extra features for the USS liberty from Expeditionary Forces DLC
 
 [MISSION_NAME.MAP]
 
-|-mission.sqm |-description.ext |-liberty_lite.sqf
-
-|->-[FUNCTIONS]|->-[TAKMY_CRANE]
+|-mission.sqm |-liberty_lite.sqf
 
 |->-[FUNCTIONS]|->-[liberty_MODULES]
 
