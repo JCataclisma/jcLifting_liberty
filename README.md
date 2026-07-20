@@ -14,7 +14,7 @@ Arma 3 - Extra features for the USS liberty destroyer
 
 -while in gameplay, open debug menu [ESC], paste the line below and hit [EXEC]:
 
-[]execVm "liberty_lite.sqf" ;
+[]execVm "fn_Init_Liberty_Attachments.sqf" ;
 
 --or execute the same file using scripts.
 
