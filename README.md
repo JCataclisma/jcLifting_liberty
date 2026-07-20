@@ -6,7 +6,7 @@ Arma 3 - Extra features for the USS liberty destroyer
 
 -add the object/prop USS liberty into your mission, either in mission editor, Zeus or script;
 
--give it the variable name "liberty";
+-= I WILL UPDATE THIS LINE FOR THE "INSTALL" IN A MOMENT, AS IT WORKS DIFFERENTLY FROM THE TAKMYR =-
 
 -while in gameplay, open debug menu [ESC], paste the line below and hit [EXEC]:
 
