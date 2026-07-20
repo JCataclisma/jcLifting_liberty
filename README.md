@@ -18,11 +18,14 @@ Arma 3 - Extra features for the USS liberty destroyer
 
 --or execute the same file using scripts.
 
+....
+You will find a new action appearing in the left/board side of inner hangar gate, at the panel where we usually add the gate switch, written in purple "Engage USS Liberty Permanent Modules": click it, and it will activate the whole pack.
+
 ........... Below is the suggested file-tree your mission folder must have to make sure this stuff will work:
 
 [MISSION_NAME.MAP]
 
-|-mission.sqm |-liberty_lite.sqf
+|-mission.sqm |-liberty_lite.sqf | -fn_Init_Liberty_Attachments.sqf
 
 |->-[FUNCTIONS]|->-[liberty_MODULES]
 
