@@ -25,7 +25,7 @@ You will find a new action appearing in the left/board side of inner hangar gate
 
 [MISSION_NAME.MAP]
 
-|-mission.sqm |-liberty_lite.sqf | -fn_Init_Liberty_Attachments.sqf
+|-mission.sqm |-liberty_lite.sqf |-fn_Init_Liberty_Attachments.sqf
 
 |->-[FUNCTIONS]|->-[liberty_MODULES]
 
