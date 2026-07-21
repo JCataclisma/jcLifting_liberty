@@ -9,7 +9,7 @@
 		any attachTo offsets you apply to _libertyFake will now calculate perfectly relative to that marker's position.
 
 		Global Access: By using missionNamespace setVariable ["libertyFake", _libertyFake, true], 
-		you can now open any other script (including takmyr.sqf or console commands) 
+		you can now open any other script (including liberty_lite.sqf or console commands) 
 		and reference the anchor simply as libertyFake without needing any spatial searches
 */
 if (!isServer) exitWith {};
@@ -36,7 +36,7 @@ if (!isServer) exitWith {};
     _libertyFake allowDamage false;
 //	[_libertyFake, false] remoteExec ["enableSimulationGlobal", 2];
 
-    // Publish globally so other scripts (like takmyr.sqf) can instantly reference "libertyFake"
+    // Publish globally so other scripts (like liberty_lite.sqf) can instantly reference "libertyFake"
     missionNamespace setVariable ["libertyFake", _libertyFake, true];
 
     // 3. Spawn and attach to our new fake anchor
@@ -49,7 +49,7 @@ if (!isServer) exitWith {};
         "<t color='#BF00FF'>Engage USS Liberty Permanent Modules</t>", 
         {
             params ["_target", "_caller", "_actionId", "_arguments"];
-            [_target] execVM "liberty.sqf"; 
+            [_target] execVM "liberty_lite.sqf"; 
         }, 
         nil, 16, false, true, "", "alive _target", 5
     ]] remoteExec ["addAction", 0, _m];
