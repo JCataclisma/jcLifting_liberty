@@ -6,11 +6,15 @@ Arma 3 - Extra features for the USS liberty destroyer
 
 -add the object/prop USS liberty into your mission, either in mission editor, Zeus or script;
 
--add a marker on the map and name it exactly "mrk_liberty_dock"; 
+-change the Liberty's height to 60.06 (this value is required so that core attachments perfectly match their place);
 
--this "mrk_liberty_dock" marker should be exactly at the very same coordinates of your USS Liberty object;
+---for the next steps, you can either download the 'mission.sqm' provided here, to copy and paste both Liberty and Marker, or follow the step-by-step:
 
--this "mrk_liberty_dock" rotation should be exactly 180 degrees compared to the Liberty object - for instance, if the "ship" is on 55 Z-Rotation, the marker's must be 235;
+--add a marker on the map and name it exactly "mrk_liberty_dock"; 
+
+--this "mrk_liberty_dock" marker should be exactly at the very same coordinates of your USS Liberty object;
+
+--this "mrk_liberty_dock" rotation should be exactly 180 degrees compared to the Liberty object - for instance, if the "ship" is on 55 Z-Rotation, the marker's must be 235;
 
 -while in gameplay, open debug menu [ESC], paste the line below and hit [EXEC]:
 
@@ -20,6 +24,8 @@ Arma 3 - Extra features for the USS liberty destroyer
 
 ....
 You will find a new action appearing in the left/board side of inner hangar gate, at the panel where we usually add the gate switch, written in purple "Engage USS Liberty Permanent Modules": click it, and it will activate the whole pack.
+
+NOTE: even if you decide to copy/paste the ship and marker from provided mission.sqm, you MUST adjust the ship's height to "60.06"!
 
 ........... Below is the suggested file-tree your mission folder must have to make sure this stuff will work:
 
